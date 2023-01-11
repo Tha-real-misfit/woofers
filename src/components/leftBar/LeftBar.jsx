@@ -7,18 +7,23 @@ import Videos from "../../assets/5.png";
 import Tutorials from "../../assets/6.png";
 import Meetups from "../../assets/7.png";
 import Messages from "../../assets/8.png";
+import { useContext } from "react";
+import { AuthContext } from "../../context/authContext";
 
 const LeftBar = () => {
+  const { currentUser } = useContext(AuthContext);
+
   return (
     <div className="leftBar">
       <div className="container">
         <div className="menu">
           <div className="user">
             <img
-              src="https://images.pexels.com/photos/1009922/pexels-photo-1009922.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt="dachshund"
+              src="https://images.pexels.com/photos/332612/pexels-photo-332612.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="looking serious"
             />
-            <span>John Doe</span>
+            <span>Michael Drew</span>
+            {/* <span>{currentUser.name}</span> */}
           </div>
           <div className="item">
             <img src={Friends} alt="Friends" />
