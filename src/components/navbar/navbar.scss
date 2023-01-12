@@ -25,6 +25,10 @@
         color: themed("logo");
       }
 
+      .icon {
+        cursor: pointer;
+      }
+
       .search {
         display: flex;
         align-items: center;

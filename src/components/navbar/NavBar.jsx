@@ -1,7 +1,7 @@
 import "./navbar.scss";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import PetsOutlinedIcon from "@mui/icons-material/PetsOutlined";
-import PestControlOutlinedIcon from "@mui/icons-material/PestControlOutlined";
+// import PetsOutlinedIcon from "@mui/icons-material/PetsOutlined";
+// import PestControlOutlinedIcon from "@mui/icons-material/PestControlOutlined";
 import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
@@ -11,6 +11,9 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { AuthContext } from "../../context/authContext";
+
+import { FaDog } from "react-icons/fa";
+import { FaCat } from "react-icons/fa";
 
 const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext);
@@ -22,13 +25,13 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>Woof furs</span>
         </Link>
-        <HomeOutlinedIcon />
+        <HomeOutlinedIcon className="icon" />
         {darkMode ? (
-          <PetsOutlinedIcon onClick={toggle} />
+          <FaDog className="icon" onClick={toggle} />
         ) : (
-          <PestControlOutlinedIcon onClick={toggle} />
+          <FaCat className="icon" onClick={toggle} />
         )}
-        <GridViewOutlinedIcon />
+        <GridViewOutlinedIcon className="icon" />
         <div className="search">
           <SearchOutlinedIcon />
           <input type="text" placeholder="Search..." />

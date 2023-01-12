@@ -15,11 +15,7 @@ const Login = () => {
       <div className="card">
         <div className="left">
           <h1>Woof Woof</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
-          </p>
+          <p>Welcome to the number one social network for pets.</p>
           <span>Don't have an account?</span>
           <Link to="/register">
             <button>Register</button>
