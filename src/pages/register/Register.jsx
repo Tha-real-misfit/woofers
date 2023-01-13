@@ -37,13 +37,16 @@ const Register = () => {
               <div className="groupFive">
                 <input type="text" placeholder="Pet Name" />
                 <input type="text" placeholder="Pet Breed" />
-                <input type="text" placeholder="Pet Age" />
-                <input type="text" placeholder="Pet Gender" />
               </div>
               <div className="groupSix">
+                <input type="text" placeholder="Pet Age" />
+                <input type="text" placeholder="Pet Gender" />
+
+                {/* <input type="submit"></input> */}
+              </div>
+              <div className="groupSeven">
                 <input type="text" placeholder="Pet Image" />
                 <input type="file" placeholder="image" />
-                {/* <input type="submit"></input> */}
               </div>
             </div>
             <button>Register</button>
