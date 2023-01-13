@@ -9,6 +9,7 @@
     overflow: scroll;
     background-color: themed("bg");
     color: themed("textColor");
+    font-family: themed("font-family");
 
     @include mobile {
       display: none;
