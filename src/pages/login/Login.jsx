@@ -14,7 +14,7 @@ const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Woof Woof</h1>
+          <h1>Woof furs.</h1>
           <p>Welcome to the number one social network for pets.</p>
           <span>Don't have an account?</span>
           <Link to="/register">

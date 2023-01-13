@@ -6,7 +6,7 @@
   justify-content: center;
 
   .card {
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: row-reverse;
     background-color: rgba(252, 247, 247, 0.822);
@@ -26,7 +26,7 @@
       padding: 50px;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 50px;
       color: #fff;
 
       h1 {
@@ -35,10 +35,13 @@
       }
 
       p {
+        font-size: 20px;
+        font-weight: 800;
       }
 
       span {
-        font-size: 14px;
+        font-size: 30px;
+        font-weight: bold;
       }
 
       button {
@@ -58,7 +61,7 @@
       padding: 50px;
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 10px;
       justify-content: center;
 
       h1 {
@@ -68,12 +71,13 @@
       form {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 10px;
 
         input {
           border: none;
-          border-bottom: 1px solid rgb(211, 211, 211);
-          padding: 20px 10px;
+          // border-bottom: 1px solid rgb(211, 211, 211);
+          padding: 10px 10px;
+          margin: 2px;
         }
 
         button {
@@ -85,6 +89,12 @@
           font-weight: bold;
           cursor: pointer;
           border-radius: 5px;
+          margin: 0px 10px;
+        }
+
+        .groups {
+          display: flex;
+          flex-direction: column;
         }
       }
     }

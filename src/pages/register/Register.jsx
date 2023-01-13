@@ -15,11 +15,37 @@ const Register = () => {
         </div>
         <div className="right">
           <h1>Register</h1>
-          <form>
-            <input type="text" placeholder="Username" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <input type="text" placeholder="Name" />
+
+          <form action="/action_page.php">
+            <div className="groups">
+              <div className="groupOne">
+                <input type="text" placeholder="Username" />
+                <input type="email" placeholder="Email" />
+              </div>
+              <div className="groupTwo">
+                <input type="password" placeholder="Password" />
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div className="groupThree">
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+              </div>
+              <div className="groupFour">
+                <input type="text" placeholder="Suburb" />
+                <input type="text" placeholder="Postcode" />
+              </div>
+              <div className="groupFive">
+                <input type="text" placeholder="Pet Name" />
+                <input type="text" placeholder="Pet Breed" />
+                <input type="text" placeholder="Pet Age" />
+                <input type="text" placeholder="Pet Gender" />
+              </div>
+              <div className="groupSix">
+                <input type="text" placeholder="Pet Image" />
+                <input type="file" placeholder="image" />
+                {/* <input type="submit"></input> */}
+              </div>
+            </div>
             <button>Register</button>
           </form>
         </div>
