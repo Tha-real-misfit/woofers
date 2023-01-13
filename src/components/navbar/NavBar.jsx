@@ -25,7 +25,9 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>Woof furs</span>
         </Link>
-        <HomeOutlinedIcon className="icon" />
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <HomeOutlinedIcon className="icon" />
+        </Link>
         {darkMode ? (
           <FaDog className="icon" onClick={toggle} />
         ) : (
