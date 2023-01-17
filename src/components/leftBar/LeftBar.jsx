@@ -22,8 +22,8 @@ const LeftBar = () => {
               src="https://images.pexels.com/photos/332612/pexels-photo-332612.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt="looking serious"
             />
-            <span>Michael Drew</span>
-            {/* <span>{currentUser.name}</span> */}
+            {/* <span>Michael Drew</span> */}
+            <span>{currentUser.name}</span>
           </div>
           <div className="item">
             <img src={Friends} alt="Friends" />

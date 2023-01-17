@@ -1,4 +1,5 @@
-import "./profile.scss";
+import "./about.scss";
+
 import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -7,25 +8,25 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import PlaceIcon from "@mui/icons-material/Place";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Posts from "../../components/posts/Posts";
+import OutlinedCard from "../../components/card/Card";
 
-const Profile = () => {
+const About = () => {
   return (
-    <div className="profile">
+    <div className="about">
       <div className="images">
         <img
-          src="https://images.pexels.com/photos/2114413/pexels-photo-2114413.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          src="https://images.pexels.com/photos/7474856/pexels-photo-7474856.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt="backyard exploring"
           className="cover"
         />
         <img
-          src="https://images.pexels.com/photos/1578459/pexels-photo-1578459.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src="https://images.pexels.com/photos/5486952/pexels-photo-5486952.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt="snow exploring"
-          className="profilePic"
+          className="aboutPic"
         />
       </div>
-      <div className="profileContainer">
-        <div className="uInfo">
+      <div className="aboutContainer">
+        <div className="mainInfo">
           <div className="left">
             <a href="http://facebook.com">
               <FacebookTwoToneIcon fontSize="small" />
@@ -44,28 +45,25 @@ const Profile = () => {
             </a>
           </div>
           <div className="center">
-            <span>Michael Drew</span>
+            <span>About Us</span>
             <div className="info">
               <div className="item">
-                <PlaceIcon />
+                <a href="https://goo.gl/maps/gtGA4WM3fhAXthjV6">
+                  <PlaceIcon />
+                </a>
                 <span>Adelaide, Australia</span>
               </div>
-              {/* <div className="item">
-                <LanguageIcon />
-                <span>wooffurs.com</span>
-              </div> */}
             </div>
-            <button>follow</button>
           </div>
           <div className="right">
             <EmailOutlinedIcon />
             <MoreVertIcon />
           </div>
         </div>
-        <Posts />
       </div>
+      <OutlinedCard />
     </div>
   );
 };
 
-export default Profile;
+export default About;

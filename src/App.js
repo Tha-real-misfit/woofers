@@ -17,6 +17,7 @@ import {
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
+import About from "./pages/about/About";
 
 function App() {
   const currentUser = useContext(AuthContext);
@@ -62,6 +63,10 @@ function App() {
         {
           path: "/profile/:id",
           element: <Profile />,
+        },
+        {
+          path: "/about",
+          element: <About />,
         },
       ],
     },

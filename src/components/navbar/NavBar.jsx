@@ -1,12 +1,11 @@
 import "./navbar.scss";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-// import PetsOutlinedIcon from "@mui/icons-material/PetsOutlined";
-// import PestControlOutlinedIcon from "@mui/icons-material/PestControlOutlined";
 import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
@@ -28,6 +27,11 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <HomeOutlinedIcon className="icon" />
         </Link>
+
+        <Link to="/about" style={{ textDecoration: "none" }}>
+          <InfoOutlinedIcon className="icon" />
+        </Link>
+
         {darkMode ? (
           <FaDog className="icon" onClick={toggle} />
         ) : (
