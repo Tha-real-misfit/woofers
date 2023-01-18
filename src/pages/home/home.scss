@@ -2,7 +2,8 @@
 
 .home {
   @include themify($themes) {
-    background-color: themed("bgSoft");
+    // background-color: themed("bgSoft"); turned this off to allow for backgrounds!
+    background-image: themed("picture");
     font-family: themed("font-family");
     padding: 20px 70px;
 

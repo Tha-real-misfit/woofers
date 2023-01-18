@@ -2,7 +2,8 @@
 
 .profile {
   @include themify($themes) {
-    background-color: themed("bgSoft");
+    // background-color: themed("bgSoft");
+    background-image: themed("picture");
     font-family: themed("font-family");
 
     .images {
