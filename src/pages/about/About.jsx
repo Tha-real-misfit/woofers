@@ -77,5 +77,3 @@ const About = () => {
 };
 
 export default About;
-
-//just making a change to save
